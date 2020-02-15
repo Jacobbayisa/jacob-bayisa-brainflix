@@ -1,0 +1,81 @@
+@import "_mixins.scss";
+@import "_variables.scss";
+
+.comment-section{
+    margin:16px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    box-sizing:border-box;
+    flex-basis:100%;
+    @include tablet{
+        margin:16px 24px;
+    }
+    @include desktop{
+        margin:16px 180px;
+    }
+    &__header{
+        flex-basis:100%;
+        font-size:1.2rem;
+        @include tablet{
+            font-size:2rem;
+        }
+    }
+    &__image{
+        width:40px;
+        height:40px;
+        border:none;
+        border-radius:100%;
+        background-image:url("../../Assets/Images/Mohan-muruge.jpg");
+        background-size:cover;
+        background-position:center;
+        @include tablet{
+            margin-left:12vw;
+        }
+    }
+    &__form{
+        width:68vw;
+        box-sizing:border-box;
+        margin:0;
+        display:flex;
+        flex-direction:column;
+        flex-wrap:wrap;
+        @include m-h4-paragraph;
+        @include tablet{
+            width:60vw;
+            margin-right:12vw;
+        }
+        @include desktop{
+            width:40vw;
+        }
+        input,textarea{
+            margin:10px 0 20px 0;
+            padding:0.8rem;
+            border-radius:5px;
+            border:1.5px solid $mercury;
+            width:100%;
+        }
+        label{
+            margin:0;
+            color:$silver;
+        }
+        .name{
+            border:2px solid $black;
+        }
+        button{
+            padding:12px 10px;
+            border-radius:5px;
+            border:none;
+            width:100%;
+            margin-bottom:16px;
+            background-color:$black;
+            color:$white;
+            @include tablet{
+                width:30%;
+                margin-left:70%;
+                padding:15px;
+            }
+        }
+        
+    }
+}

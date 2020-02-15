@@ -1,26 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import CommentInput from  './Components/Comments/CommentInput';
+import CommentDisplay from './Components/Comments/CommentDisplay';
+import Videos from './Components/Sidebar/Videos';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    <CommentInput/>
+    <CommentDisplay/>
+    <img src={Videos[3].img}/>
+    <div > {Videos[1].title} </div>
+    </>
+  )
 }
 
 export default App;
