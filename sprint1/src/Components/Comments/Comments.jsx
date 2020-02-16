@@ -1,5 +1,5 @@
 import React from 'react';
-    let commentArr = [
+    let Comments = [
         {
             name:"Micheal Lyons",
             timeStamp:"12/18/2018",
@@ -17,4 +17,4 @@ import React from 'react';
         }
     ];
 
-export default commentArr;
+export default Comments;

@@ -12,8 +12,8 @@ import img8 from "../../Assets/Images/video-list-8.jpg";
 
 const videos = [
     {   img: img0,
-        title:"",
-        artist:""
+        title:"BMX Rampage: 2018 Highlights",
+        artist:"Red Cow"
     },
     {   img: img1,
         title:"Become A Travel Pro In One Easy Lesson",

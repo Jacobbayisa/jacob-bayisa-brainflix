@@ -1,0 +1,50 @@
+@font-face {
+    font-family: avenir-bold;
+    src: url("../../Assets/_GlobalFont/AvenirNextProLT/LinotypeAvenirNextLTProBold.otf");
+  }
+.current-video{
+    padding-left:16px;
+    padding-right:16px;
+    display:flex;
+    flex-wrap:wrap;
+}
+.title{
+    font-family:avenir-bold;
+}
+.artist-container{
+    display:flex;
+    flex-wrap:wrap;
+    flex-basis:100%;
+}
+.artist{
+    margin-right:8px;
+    font-weight:bold;
+}
+.date-stamp{
+    color:silver;
+}
+.view-section{
+    display:flex;
+    flex-wrap:wrap;
+    flex-basis:100%;
+    align-items: center;
+    margin-bottom:24px;
+}
+.views-count{
+    margin-left:8px;
+    margin-right:20%;
+    font-weight:lighter;
+    font-size:0.8rem;
+}
+.likes-count{
+    font-weight:lighter;
+    font-size:0.8rem;
+}
+.likes-icon{
+    margin-right:8px;
+}
+.description{
+    font-size:11px;
+    margin-top:24px;
+    line-height:1.3rem;
+}

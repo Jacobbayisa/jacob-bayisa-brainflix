@@ -2,7 +2,9 @@
 @import "_variables.scss";
 
 .comment-section{
-    margin:16px;
+    padding-left:16px;
+    padding-right:16px;
+    box-sizing: border-box;
     display:flex;
     flex-wrap:wrap;
     justify-content:space-between;
@@ -16,19 +18,22 @@
     }
     &__header{
         flex-basis:100%;
-        font-size:1.2rem;
+        font-size:1rem;
+        margin-top:30px;
+        margin-bottom:32px;
         @include tablet{
             font-size:2rem;
         }
     }
     &__image{
-        width:40px;
-        height:40px;
+        width:45px;
+        height:45px;
         border:none;
         border-radius:100%;
         background-image:url("../../Assets/Images/Mohan-muruge.jpg");
         background-size:cover;
         background-position:center;
+        background-position-x:0.1rem;
         @include tablet{
             margin-left:12vw;
         }
@@ -48,27 +53,30 @@
         @include desktop{
             width:40vw;
         }
-        input,textarea{
+        textarea{
             margin:10px 0 20px 0;
             padding:0.8rem;
+            box-sizing: border-box;
             border-radius:5px;
-            border:1.5px solid $mercury;
+            border:2px solid #0095FF;;
             width:100%;
         }
         label{
             margin:0;
+            font-weight:bold;
+            font-size:12px;
             color:$silver;
         }
         .name{
             border:2px solid $black;
         }
         button{
-            padding:12px 10px;
+            padding:15px 10px;
             border-radius:5px;
             border:none;
             width:100%;
             margin-bottom:16px;
-            background-color:$black;
+            background-color:#0095FF;
             color:$white;
             @include tablet{
                 width:30%;

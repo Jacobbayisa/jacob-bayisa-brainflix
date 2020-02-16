@@ -1,0 +1,67 @@
+
+
+.hero{
+    width:100%;
+    box-sizing: border-box;
+    height:183px;
+    background-image: url("../../Assets/Images/video-list-0.jpg");
+    background-size:cover;
+    display:flex;
+    align-items: flex-end;
+    padding:16px;
+    background-repeat: none;
+
+    &__play{
+        background-color:rgba(0,0,0,0.5);
+        background-image: url("../../Assets/Icons/SVG/Icon-play.svg");
+        background-size:1rem;
+        background-repeat:no-repeat;
+        background-position: center;
+        border:none;
+        width:15vw;
+        height:8vw;
+        margin-right:8px;
+    }
+    &__video{
+        margin:0;
+        width:100%;
+        display:flex;
+        flex-wrap:wrap;
+    }
+    &__video-player{
+        width:50%;
+        height:8vw;
+        margin-right:8px;
+        align-items: center;
+        background-image:rgba(0,0,0,0.5);
+    }
+    &__audio-cont{
+        display:flex;
+        padding:0 10px 0 10px;
+        flex-wrap:wrap;
+        justify-content: space-between;
+        width:20%;
+        background-color:rgba(0,0,0,0.5);
+        
+    }
+    &__full-screen{
+        background-color:rgba(0,0,0,0);
+        background-image: url("../../Assets/Icons/SVG/Icon-fullscreen.svg");
+        background-size:1rem;
+        background-repeat:no-repeat;
+        background-position: center;
+        border:none;
+        width:5vw;
+        height:8vw;
+    }
+    &__volume{
+        background-color:rgba(0,0,0,0);
+        background-image: url("../../Assets/Icons/SVG/Icon-volume.svg");
+        background-size:1rem;
+        background-repeat:no-repeat;
+        background-position: center;
+        border:none;
+        width:5vw;
+        height:8vw;
+    }
+}

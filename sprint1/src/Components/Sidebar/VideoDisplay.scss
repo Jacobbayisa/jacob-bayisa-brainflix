@@ -1,0 +1,30 @@
+.sidebar{
+    width:100%;
+    box-sizing: border-box;
+    padding:24px 16px 0 16px ;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    &__img{
+        width:120px;
+        height:70px;
+        object-fit: cover;
+        border-radius:5px;
+    }
+    &__description{
+        width:53%;
+        margin-left:10px;
+    }
+    &__video-title{
+        width:100%;
+        font-size:0.8rem;
+        margin:0;
+    }
+    &__artist{
+        width:100%;
+        margin-top:10px;
+        margin-bottom:0;
+        font-size:0.8rem;
+    }
+}
+

@@ -1,0 +1,85 @@
+@font-face {
+    font-family: avenir-bold;
+    src: url("../../Assets/_GlobalFont/AvenirNextProLT/LinotypeAvenirNextLTProBold.otf");
+  }
+
+.header{
+    box-sizing: border-box;
+    padding-top:16px;
+    margin:0 16px 16px;
+    height:169px;
+    
+    &__logo{
+        display:flex;
+        flex-wrap:wrap;
+        align-items:center;
+        justify-content: center;
+        margin:0 0 16px 0;
+        &__icon{
+            width:0.8rem;
+            height:1rem;
+            background-color:#0095FF;
+            padding:4px 10px 4px 15px;
+            border-radius:7px;
+            margin-right:10px;
+        }
+        &__title{
+            margin:0;
+            width:70%;
+            width:fit-content;
+            font-size:1.2rem;
+            font-weight:bolder;
+            font-family:avenir-bold;
+    }
+}
+
+
+    &__form{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: space-between;
+    }
+
+    &__search-input{
+        box-sizing: border-box;
+        width:100%;
+        background-image:url("../../Assets/Icons/SVG/Icon-search.svg");
+        background-position-y: center;
+        background-position-x: 15px;
+        background-repeat: no-repeat;
+        background-size:1.2rem;
+        text-indent: 30px;
+    
+        padding:15px;
+        border:1px solid#E1E1E3;
+        border-radius:5px;
+        
+    }
+    &__button{
+        width:80%;
+        padding:15px;
+        font-weight:bolder;
+        color:#fff;
+        background-color:#0095FF;
+        background-image:url("../../Assets/Icons/SVG/Icon-upload.svg");
+        background-position-y: center;
+        background-position-x: 15vw;
+        background-repeat: no-repeat;
+        background-size:1.3rem;
+        margin-top:8px;
+        margin-bottom:16px;
+        border:none;
+        border-radius:5px;
+    }
+    &__icon{
+        width:45px;
+        height:45px;
+        margin-top:8px;
+        border:none;
+        border-radius:100%;
+        background-image:url("../../Assets/Images/Mohan-muruge.jpg");
+        background-size:cover;
+        background-position:center;
+        background-position-x:0.1rem;
+    }
+}

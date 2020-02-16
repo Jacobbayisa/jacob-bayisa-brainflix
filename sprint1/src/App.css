@@ -1,3 +1,11 @@
+@font-face{
+  font-family:avenir;
+  src:url("./Assets/_GlobalFont/AvenirNextProLT/LinotypeAvenirNextLTProRegular.otf");
+}
+
+html,body{
+  font-family:avenir;
+}
 .App {
   text-align: center;
 }
@@ -35,4 +43,10 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.next-video{
+  margin:40px 16px 16px;
+  color:silver;
+  font-size:0.8rem;
 }
