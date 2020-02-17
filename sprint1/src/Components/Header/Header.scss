@@ -6,15 +6,26 @@
 .header{
     box-sizing: border-box;
     padding-top:16px;
+    display:flex;
+    flex-wrap:wrap;
     margin:0 16px 16px;
     height:169px;
+    @media screen and (min-width:768px){
+        height:80px;
+        justify-content: space-between;
+    }
     
     &__logo{
         display:flex;
         flex-wrap:wrap;
         align-items:center;
+        align-self: center;
         justify-content: center;
         margin:0 0 16px 0;
+        @media screen and(min-width:768px){
+            width:20%;
+            margin-bottom:0;
+        }
         &__icon{
             width:0.8rem;
             height:1rem;
@@ -30,14 +41,19 @@
             font-size:1.2rem;
             font-weight:bolder;
             font-family:avenir-bold;
+            @media screen and(min-width:768px){
+            }
+        }
     }
-}
-
-
     &__form{
         display:flex;
         flex-wrap:wrap;
-        justify-content: space-between;
+        align-items:center;
+        justify-content:space-between ;
+        @media screen and(min-width:768px){
+            width:75%;
+            justify-content:flex-end;
+        }
     }
 
     &__search-input{
@@ -49,10 +65,14 @@
         background-repeat: no-repeat;
         background-size:1.2rem;
         text-indent: 30px;
-    
         padding:15px;
         border:1px solid#E1E1E3;
         border-radius:5px;
+        align-self:center;
+        @media screen and (min-width:768px){
+            width:50%;
+            margin:0;
+        }
         
     }
     &__button{
@@ -70,6 +90,11 @@
         margin-bottom:16px;
         border:none;
         border-radius:5px;
+        align-self: center;
+        @media screen and (min-width:768px){
+            width:20%;
+            margin:0  24px;
+        }
     }
     &__icon{
         width:45px;
@@ -81,5 +106,8 @@
         background-size:cover;
         background-position:center;
         background-position-x:0.1rem;
+        @media screen and(min-width:768px){
+            margin:0;
+        }
     }
 }

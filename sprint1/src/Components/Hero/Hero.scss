@@ -1,15 +1,30 @@
-
+$tablet:768px;
 
 .hero{
     width:100%;
     box-sizing: border-box;
     height:183px;
-    background-image: url("../../Assets/Images/video-list-0.jpg");
-    background-size:cover;
-    display:flex;
-    align-items: flex-end;
-    padding:16px;
-    background-repeat: none;
+    background-color:rgb(0,0,0);
+    @media screen and(min-width:$tablet){
+        height:400px;
+    }
+    &__video{
+        box-sizing:border-box;
+        width:100%;
+        height:100%;
+        background-image: url("../../Assets/Images/video-list-0.jpg");
+        background-size:cover;
+        display:flex;
+        flex-wrap:wrap;
+        align-items: flex-end;
+        padding:16px;
+        background-repeat: none;
+        margin-left:auto;
+        margin-right:auto;
+        @media screen and (min-width: $tablet){
+            width:700px;
+        }
+    }
 
     &__play{
         background-color:rgba(0,0,0,0.5);
@@ -21,27 +36,38 @@
         width:15vw;
         height:8vw;
         margin-right:8px;
+        @media screen and(min-width:$tablet){
+            width:10vw;
+            height:5vw;
+            margin-left:8px;
+            margin-right:8px;
+        }
+        
     }
-    &__video{
-        margin:0;
-        width:100%;
-        display:flex;
-        flex-wrap:wrap;
-    }
+    
     &__video-player{
         width:50%;
         height:8vw;
         margin-right:8px;
         align-items: center;
         background-image:rgba(0,0,0,0.5);
+        @media screen and (min-width:$tablet){
+            height:5vw;
+            width:70%;
+        }
     }
     &__audio-cont{
         display:flex;
         padding:0 10px 0 10px;
         flex-wrap:wrap;
         justify-content: space-between;
+        height:8vw;
         width:20%;
         background-color:rgba(0,0,0,0.5);
+        @media screen and(min-width:$tablet){
+            height:5vw;
+            width:10%;
+        }
         
     }
     &__full-screen{
@@ -52,7 +78,10 @@
         background-position: center;
         border:none;
         width:5vw;
-        height:8vw;
+        height:100%;
+        @media screen and (min-width:$tablet){
+            width:4vw;
+        }
     }
     &__volume{
         background-color:rgba(0,0,0,0);
@@ -62,6 +91,9 @@
         background-position: center;
         border:none;
         width:5vw;
-        height:8vw;
+        height:100%;
+        @media screen and (min-width:$tablet){
+            width:4vw;
+        }
     }
 }

@@ -2,49 +2,91 @@
     font-family: avenir-bold;
     src: url("../../Assets/_GlobalFont/AvenirNextProLT/LinotypeAvenirNextLTProBold.otf");
   }
+  $tablet:768px;
 .current-video{
     padding-left:16px;
     padding-right:16px;
     display:flex;
     flex-wrap:wrap;
-}
-.title{
-    font-family:avenir-bold;
-}
-.artist-container{
-    display:flex;
-    flex-wrap:wrap;
-    flex-basis:100%;
-}
-.artist{
-    margin-right:8px;
-    font-weight:bold;
-}
-.date-stamp{
-    color:silver;
-}
-.view-section{
-    display:flex;
-    flex-wrap:wrap;
-    flex-basis:100%;
-    align-items: center;
-    margin-bottom:24px;
-}
-.views-count{
-    margin-left:8px;
-    margin-right:20%;
-    font-weight:lighter;
-    font-size:0.8rem;
-}
-.likes-count{
-    font-weight:lighter;
-    font-size:0.8rem;
-}
-.likes-icon{
-    margin-right:8px;
-}
-.description{
-    font-size:11px;
-    margin-top:24px;
-    line-height:1.3rem;
+    @media screen and (min-width:$tablet){
+        justify-content:space-between;
+    }
+    &__title{
+        font-family:avenir-bold;
+        width:100%;
+        @media screen and (min-width:$tablet){
+            font-size:2rem;
+        }
+    }
+    &__artist-time-cont{
+        display:flex;
+        flex-wrap:wrap;
+        flex-basis:100%;
+        @media screen and (min-width:$tablet){
+            flex-basis:45%;
+            margin-bottom:24px;
+        }
+    }
+    &__artist{
+        margin-right:8px;
+        font-weight:bold;
+        @media screen and (min-width:$tablet){
+            margin-top:0;
+            margin-bottom:0;
+            align-self: center;
+        }
+    }
+    &__date-stamp{
+        color:silver;
+        @media screen and (min-width:$tablet){
+            margin:0;
+            align-self: center;
+        }
+
+    }
+    &__view-section{
+        display:flex;
+        flex-wrap:wrap;
+        flex-basis:100%;
+        align-items: center;
+        margin-bottom:24px;
+        @media screen and(min-width:$tablet){
+            flex-basis:45%;
+            justify-content: flex-end;
+            padding-right:20px;
+        }
+    }
+    &__views-count{
+        margin-left:8px;
+        margin-right:20%;
+        font-weight:lighter;
+        font-size:0.8rem;
+        @media screen and(min-width:$tablet){
+            margin:0 24px 0 0;    
+        }
+    }
+    &__likes-icon{
+        margin-right:8px;
+    }
+    &__likes-count{
+        font-weight:lighter;
+        font-size:0.8rem;
+        @media screen and(min-width:$tablet){
+            margin:0;    
+        }
+        
+    }
+    &__description{
+        font-size:11px;
+        margin-top:24px;
+        line-height:1.3rem;
+        @media screen and(min-width:$tablet){
+            border-top:1px solid silver;
+            margin:0;
+            padding-top:40px;
+            font-size:0.9rem;
+            line-height:1.5rem;
+            padding-right:30%;
+        }
+    }
 }

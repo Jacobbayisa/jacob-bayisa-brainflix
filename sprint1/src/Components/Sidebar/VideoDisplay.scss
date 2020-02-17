@@ -1,3 +1,4 @@
+$tablet:768px;
 .sidebar{
     width:100%;
     box-sizing: border-box;
@@ -5,6 +6,10 @@
     display:flex;
     flex-wrap:wrap;
     justify-content: space-between;
+    @media screen and (min-width:$tablet){
+        justify-content:flex-start;
+        width:50%;
+    }
     &__img{
         width:120px;
         height:70px;
@@ -14,11 +19,17 @@
     &__description{
         width:53%;
         margin-left:10px;
+        @media screen and(min-width:$tablet){
+            margin-left:15px;
+        }
     }
     &__video-title{
         width:100%;
         font-size:0.8rem;
         margin:0;
+        @media screen and (min-width:$tablet){
+            font-size:0.9rem;
+        }
     }
     &__artist{
         width:100%;

@@ -8,19 +8,19 @@ import likeIcon from '../../Assets/Icons/SVG/Icon-likes.svg'
 const CurrentVideo = (props) => {
     return (
         <div className ="current-video">
-            <h2 className="title">{props.title}</h2>
-            <div className="artist-container">
-                <p className = "artist"> By {" " + props.artist}</p>
-                <p className = "date-stamp"> 12/18/2018 </p>
+            <h2 className="current-video__title">{props.title}</h2>
+            <div className="current-video__artist-time-cont">
+                <p className = "current-video__artist"> By {" " + props.artist}</p>
+                <p className = "current-video__date-stamp"> 12/18/2018 </p>
             </div>
-            <div className="view-section">
-                <img className ="views-icon" src ={viewIcon}></img>
-                <p className="views-count"> 1,001,023 </p>
-                <img className="likes-icon" src ={likeIcon}></img>
-                <p className ="likes-count">110,985</p>
+            <div className="current-video__view-section">
+                <img className ="current-video__views-icon" src ={viewIcon}></img>
+                <p className="current-video__views-count"> 1,001,023 </p>
+                <img className="current-video__likes-icon" src ={likeIcon}></img>
+                <p className ="current-video__likes-count">110,985</p>
             </div>
 
-            <p className ="description">
+            <p className ="current-video__description">
                 On a gusty day in Southern Utah, a group of 25
                 daring mountain bikers blew the doors off what is
                 possible on two wheels, unleashing some of the

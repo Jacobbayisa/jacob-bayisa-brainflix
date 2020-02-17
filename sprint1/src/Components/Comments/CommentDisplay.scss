@@ -1,8 +1,8 @@
-@import './mixins';
-
-
+//variables
+$tablet:768px;
+$desktop:1200px;
+$mercury:#E1E1E1;
 .comment-display{
-    
     box-sizing: border-box;
     width:90%;
     display:flex;
@@ -12,7 +12,12 @@
     border-top:1px solid $mercury;
     margin-left:16px;
     margin-right:16px;
-    padding:24px 0;
+    padding:12px 0;
+    @media screen and (min-width:$tablet){
+        padding-top:24px;
+        padding-bottom:24px;
+        
+    }
 
     &__name-comment-cont{
         width:68vw;
@@ -22,17 +27,21 @@
         flex-direction:row;
         justify-content:flex-start;
         flex-wrap:wrap;
-        @include m-h4-paragraph;
-        @include tablet{
-            width:60vw;
+        font-size:14px;
+        @media screen and(min-width:$tablet){
+            width:624px;
         }
-        @include desktop{
+        @media screen and(min-width:$desktop){
             width:40vw;
         }
         
     }
     &__comment{
+        width:100%;
         flex-basis:100%;
+        @media screen and(min-width:768px){
+            margin:0;
+        }
     }
     &__image-icon{
         width:40px;
@@ -41,8 +50,13 @@
         border:none;
         border-radius:100%;
     }
+    &__name{
+        margin-top:0;
+    }
     &__time{
        margin-left:10%;
+       margin-top:0;
        line-height:24px;
+       color:silver;
     }
 }
