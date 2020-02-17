@@ -2,7 +2,10 @@
     font-family: avenir-bold;
     src: url("../../Assets/_GlobalFont/AvenirNextProLT/LinotypeAvenirNextLTProBold.otf");
   }
+  //variables
   $tablet:768px;
+  $desktop:1200px;
+
 .current-video{
     padding-left:16px;
     padding-right:16px;
@@ -10,6 +13,10 @@
     flex-wrap:wrap;
     @media screen and (min-width:$tablet){
         justify-content:space-between;
+    }
+    @media screen and(min-width:$desktop){
+       padding:0;
+       margin:0;
     }
     &__title{
         font-family:avenir-bold;
@@ -34,6 +41,9 @@
             margin-top:0;
             margin-bottom:0;
             align-self: center;
+        }
+        @media screen and (min-width:$desktop){
+            font-size:0.8rem;
         }
     }
     &__date-stamp{
@@ -87,6 +97,9 @@
             font-size:0.9rem;
             line-height:1.5rem;
             padding-right:30%;
+        }
+        @media screen and(min-width:$desktop){
+            font-size:0.7rem;
         }
     }
 }

@@ -50,3 +50,9 @@ html,body{
   color:silver;
   font-size:0.8rem;
 }
+
+.main-container{
+  display:flex;
+  flex-wrap:wrap;
+  
+}

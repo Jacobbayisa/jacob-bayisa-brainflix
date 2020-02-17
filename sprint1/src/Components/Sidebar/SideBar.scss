@@ -1,0 +1,10 @@
+$desktop:1200px;
+
+.sidebar-container{
+    @media screen and (min-width:$desktop){
+        width:30%;
+        display:flex;
+        flex-direction: column;
+
+    }
+}

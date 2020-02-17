@@ -1,0 +1,81 @@
+//variables
+$tablet:768px;
+$desktop:1200px;
+$mercury:#E1E1E1;
+
+.comment-display{
+    box-sizing: border-box;
+    width:90%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    border-bottom:1px solid $mercury;
+    border-top:1px solid $mercury;
+    margin-left:16px;
+    margin-right:16px;
+    padding:12px 0;
+    @media screen and (min-width:$tablet){
+        padding-top:24px;
+        padding-bottom:24px;
+        justify-content:flex-start;
+    }
+    @media screen and(min-width:$desktop){
+        justify-content:flex-start;
+        margin:0;
+        width:100%;
+    }
+
+    &__name-comment-cont{
+        width:68vw;
+        box-sizing:border-box;
+        margin:0;
+        display:flex;
+        flex-direction:row;
+        justify-content:flex-start;
+        flex-wrap:wrap;
+        font-size:14px;
+        @media screen and(min-width:$tablet){
+            width:624px;
+            margin-left:24px;
+        }
+        @media screen and(min-width:$desktop){
+            width:40vw;
+            margin-left:20px;
+        }
+        
+    }
+    &__comment{
+        width:100%;
+        flex-basis:100%;
+        @media screen and(min-width:$tablet){
+            margin:0;
+        }
+        @media screen and(min-width:$desktop){
+            font-size:0.8rem;
+            line-height:1.5rem;
+        }
+    }
+    &__image-icon{
+        width:40px;
+        height:40px;
+        background-color:$mercury;
+        border:none;
+        border-radius:100%;
+        @media screen and (min-width:$desktop){
+            width:35px;
+            height:35px;
+        }
+    }
+    &__name{
+        margin-top:0;
+        @media screen and (min-width:$desktop){
+            font-size:0.8rem;
+        }
+    }
+    &__time{
+       margin-left:10%;
+       margin-top:0;
+       line-height:24px;
+       color:silver;
+    }
+}

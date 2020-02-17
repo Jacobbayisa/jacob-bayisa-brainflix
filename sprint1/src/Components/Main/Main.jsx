@@ -1,14 +1,21 @@
 import React from 'react'
-import CommentDisplay from '../Comments/CommentDisplay';
-import Comments from '../Comments/Comments';
-import VideoDisplay from '../Sidebar/VideoDisplay';
-import Videos from '../Sidebar/Videos';
+import CommentDisplay from './Comments/CommentDisplay';
+import Comments from './Comments/Comments';
+import CommentInput from './Comments/CommentInput';
+import CurrentVideo from './CurrentVideo';
+import Videos from '../SideBar/Videos';
+import './Main.scss';
 
 
 
 const Main = () => {
     return(
-        <>
+        <div className="main">
+        <CurrentVideo
+          title={Videos[0].title}
+          artist={Videos[0].artist}
+        />
+        <CommentInput/>
         {
             Comments.map( comment =>{
               return(
@@ -21,23 +28,8 @@ const Main = () => {
               )
             })
           }
-           <p className="next-video">NEXT VIDEO</p>
-          {
-            Videos.map( (video,index) =>{
-              if(index===0){
-                return null;
-              } else {
-              return (
-                <VideoDisplay 
-                  img = {video.img}
-                  title ={video.title}
-                  artist={video.artist}
-                />
-              )
-              }
-            })
-          }
-      </>
+          
+      </div>
     )
 }
 

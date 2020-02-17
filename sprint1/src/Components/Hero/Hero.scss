@@ -1,4 +1,6 @@
+//variables
 $tablet:768px;
+$desktop:1200px;
 
 .hero{
     width:100%;
@@ -7,6 +9,10 @@ $tablet:768px;
     background-color:rgb(0,0,0);
     @media screen and(min-width:$tablet){
         height:400px;
+    }
+    @media screen and (min-width:$desktop){
+        height:540px;
+        justify-content: space-between;
     }
     &__video{
         box-sizing:border-box;
@@ -24,6 +30,9 @@ $tablet:768px;
         @media screen and (min-width: $tablet){
             width:700px;
         }
+        @media screen and (min-width:$desktop){
+            width:944px;
+        }
     }
 
     &__play{
@@ -33,16 +42,20 @@ $tablet:768px;
         background-repeat:no-repeat;
         background-position: center;
         border:none;
-        width:15vw;
+        width:15%;
         height:8vw;
         margin-right:8px;
         @media screen and(min-width:$tablet){
-            width:10vw;
+            width:10%;
             height:5vw;
             margin-left:8px;
             margin-right:8px;
         }
-        
+        @media screen and (min-width:$desktop){
+            height:3vw;
+            width:5%;
+            margin-left:0;
+        }
     }
     
     &__video-player{
@@ -54,6 +67,10 @@ $tablet:768px;
         @media screen and (min-width:$tablet){
             height:5vw;
             width:70%;
+        }
+        @media screen and (min-width:$desktop){
+            width:751px;
+            height:3vw;
         }
     }
     &__audio-cont{
@@ -68,7 +85,10 @@ $tablet:768px;
             height:5vw;
             width:10%;
         }
-        
+        @media screen and (min-width:$desktop){
+            width:7%;
+            height:3vw;
+        }
     }
     &__full-screen{
         background-color:rgba(0,0,0,0);
@@ -82,6 +102,9 @@ $tablet:768px;
         @media screen and (min-width:$tablet){
             width:4vw;
         }
+        @media screen and (min-width:$desktop){
+            width:2vw;
+        }
     }
     &__volume{
         background-color:rgba(0,0,0,0);
@@ -94,6 +117,9 @@ $tablet:768px;
         height:100%;
         @media screen and (min-width:$tablet){
             width:4vw;
+        }
+        @media screen and (min-width:$desktop){
+            width:2vw;
         }
     }
 }

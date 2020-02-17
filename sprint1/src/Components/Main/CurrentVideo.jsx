@@ -1,5 +1,5 @@
 import React from 'react';
-import Videos from '../Sidebar/Videos';
+import Videos from '../SideBar/Videos';
 import './CurrentVideo.scss'
 import viewIcon from '../../Assets/Icons/SVG/Icon-views.svg'
 import likeIcon from '../../Assets/Icons/SVG/Icon-likes.svg'
