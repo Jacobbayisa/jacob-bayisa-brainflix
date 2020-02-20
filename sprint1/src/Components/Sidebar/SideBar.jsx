@@ -10,10 +10,11 @@ const SideBar = () =>{
             {
                 Videos.map( (video,index) =>{
                 if(index===0){
-                    return null;
+                   return null;
                 } else {
                 return (
                     <VideoDisplay 
+                    key = {video.id}
                     img = {video.img}
                     title ={video.title}
                     artist={video.artist}

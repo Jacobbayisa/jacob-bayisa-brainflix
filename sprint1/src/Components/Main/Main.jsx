@@ -12,6 +12,7 @@ const Main = () => {
     return(
         <div className="main">
         <CurrentVideo
+          key ={Videos.id}
           title={Videos[0].title}
           artist={Videos[0].artist}
         />
@@ -20,9 +21,11 @@ const Main = () => {
             Comments.map( comment =>{
               return(
                 <CommentDisplay
+                  key = {comment.id}
                   name = {comment.name}
                   timeStamp = {comment.timeStamp}
                   comment = {comment.comment}
+                  
       
                 />
               )

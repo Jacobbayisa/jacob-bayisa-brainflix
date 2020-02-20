@@ -15,7 +15,7 @@ const Header = () => {
                 <button className="header__button"> UPLOAD</button>
                 <div className="header__icon"></div>
             </form>
-            <nav classNmae="header__nav">
+            <nav className="header__nav">
 
             </nav>
         </section>

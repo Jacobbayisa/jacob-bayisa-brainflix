@@ -72,7 +72,7 @@ $desktop:1200px;
         border:1px solid#E1E1E3;
         border-radius:5px;
         align-self:center;
-        @media screen and (min-width:768px){
+        @media screen and (min-width:$tablet){
             width:50%;
             margin:0;
         }
@@ -86,7 +86,7 @@ $desktop:1200px;
         background-color:#0095FF;
         background-image:url("../../Assets/Icons/SVG/Icon-upload.svg");
         background-position-y: center;
-        background-position-x: 15vw;
+        background-position-x: 10vw;
         background-repeat: no-repeat;
         background-size:1.3rem;
         margin-top:8px;
@@ -94,9 +94,15 @@ $desktop:1200px;
         border:none;
         border-radius:5px;
         align-self: center;
-        @media screen and (min-width:768px){
+        @media screen and (min-width:7$tablet){
             width:20%;
             margin:0  24px;
+            background-position-x:1vw;
+        }
+        @media screen and (min-width:$desktop){
+            width:20%;
+            margin:0  24px;
+            background-position-x:2vw;
         }
     }
     &__icon{
