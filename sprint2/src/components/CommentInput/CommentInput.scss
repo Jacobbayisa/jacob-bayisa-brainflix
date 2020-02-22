@@ -17,7 +17,8 @@
         justify-content:flex-start;
     }
     @include desktop{
-        margin-left:0;
+        margin:16px 0 16px 0;
+        width:100%;
     }
     
     &__header{
@@ -60,8 +61,7 @@
             margin-left:20px;
         }
         @include desktop{
-            width:600px;
-            
+            width:87%;  
         }
         label{
             margin:0;
@@ -92,7 +92,8 @@
             box-sizing:border-box;
         }
         @include desktop{
-            width:436px;
+            width:70%;
+            font-size:12px;
         }
     }
     &__submit{
@@ -109,6 +110,9 @@
             padding:18px 10px;
             margin:0;
             
+        }
+        @include desktop{
+            width:25%;
         }
     }
 }

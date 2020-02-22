@@ -8,7 +8,6 @@ const Header = () => {
         <section className="header">
             <div className="header__logo">
                 <img src ={logoImage} className='header__logo-icon'/>
-                
             </div>
             <form className="header__form">
                 <input type="text" placeholder="Search" className ="header__search-input"></input>

@@ -1,0 +1,128 @@
+@import '../../styles/mixins';
+@import '../../styles/variables';
+
+.upload{
+    box-sizing:border-box;
+    margin-top:24px;
+    margin-left:16px;
+    margin-right:16px;
+    @include desktop{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-between;
+        margin-left:5%;
+        margin-right:5%;
+        padding-left:5%;
+        padding-right:5%;
+    }
+    &__title{
+        padding-bottom:32px;
+        margin:0;
+        font-size:1.4rem;
+        font-family:avenir-bold;
+        @include tablet{
+            border-bottom:1px solid $silver;
+            margin-top:48px;
+            margin-bottom:40px;
+            font-size:2rem;
+        }
+        @include desktop{
+            flex-basis: 100%;
+        }
+    }
+    &__video-label{
+        @include desktop{
+            flex-basis:100%;
+            align-self:center;
+        }
+    }
+    &__img{
+        width:100%;
+        height:153px;
+        background-image:url("../../assets/Images/Upload-video-preview.jpg");
+        background-size:cover;
+        background-repeat:none;
+        border-radius:5px;
+        margin-bottom:32px;
+        @include tablet{
+            width:344px;
+            height:183px;
+        }
+    }
+    &__form{
+        width:100%;
+        @include desktop{
+            width:60%;
+        }
+    }
+    &__title-label{
+        @include desktop{
+            flex-basis:100%;
+        }
+    }
+    &__video-title{
+        box-sizing:border-box;
+        width:100%;
+        height:3rem;
+        padding:5px 10px;
+        font-size:0.8rem;
+        border: 1px solid $silver;
+        border-radius:5px;
+        margin-bottom:24px;
+    }
+    &__description-label{
+        @include desktop{
+            flex-basis:100%;
+        }
+    }
+    &__description{
+        box-sizing:border-box;
+        width:100%;
+        height:143px;
+        padding:10px;
+        border-radius:5px;
+        @include desktop{
+            height:94px;
+        }
+
+    }
+    &__buttons{
+        @include tablet{
+            width:100%;
+            display:flex;
+            justify-content: flex-end;
+            margin:40px 0;
+            padding-top:40px;
+            border-top:1px solid $silver;
+        }
+    }
+    &__cancel{
+        display:none;
+        @include tablet{
+            display:inline;
+            background-color:#fff;
+            color:$brainflix-blue;
+            border:none;
+            align-self:center;
+        }
+    }
+    &__publish{
+        box-sizing: border-box;
+        width:100%;
+        height:3rem;
+        margin:32px 0;
+        background-color:$brainflix-blue;
+        border:none;
+        border-radius:5px;
+        color:$white;
+        @include tablet{
+            width:160px;
+            margin:0 0 0 48px;
+        }
+    }
+    &__label{
+        color:$silver;
+        font-size:0.8rem;
+    }
+}
+

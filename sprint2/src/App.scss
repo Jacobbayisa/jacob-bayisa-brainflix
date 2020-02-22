@@ -15,5 +15,9 @@ html,body{
   .main-container{
     display:flex;
     flex-wrap:wrap;
-    
+    @include desktop{
+      margin-left:5%;
+      margin-right:5%;
+    }
+   
   }
