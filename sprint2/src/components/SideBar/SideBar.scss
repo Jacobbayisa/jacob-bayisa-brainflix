@@ -1,0 +1,10 @@
+@import '../../styles/mixins';
+
+.sidebar-container{
+   @include desktop{
+        width:30%;
+        display:flex;
+        flex-direction: column;
+
+    }
+}

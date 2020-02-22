@@ -1,0 +1,8 @@
+@import '../../styles/mixins';
+.main{
+   @include desktop{
+        width:60%;
+        margin-left:5%;
+        border-right:1px solid silver;
+    }
+}
