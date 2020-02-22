@@ -31,22 +31,6 @@
         @include desktop{
             margin-left:5%;
         }
-        &__icon{
-            width:0.8rem;
-            height:1rem;
-            background-color:#0095FF;
-            padding:4px 10px 4px 15px;
-            border-radius:7px;
-            margin-right:10px;
-        }
-        &__title{
-            margin:0;
-            width:70%;
-            width:fit-content;
-            font-size:1.2rem;
-            font-weight:bolder;
-            font-family:avenir-bold;
-        }
     }
     &__form{
         display:flex;

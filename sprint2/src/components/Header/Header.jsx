@@ -1,14 +1,14 @@
 import React from 'react';
 import "./Header.scss";
-import logoIcon from '../../assets/Icons/SVG/Icon-play.svg'
+import logoImage from '../../assets/Logo/Logo-brainflix.svg'
 
 const Header = () => {
 
     return (
         <section className="header">
             <div className="header__logo">
-                <img src={logoIcon} className="header__logo__icon"/> 
-                <h2 className ="header__logo__title">BrainFlix</h2>
+                <img src ={logoImage} className='header__logo-icon'/>
+                
             </div>
             <form className="header__form">
                 <input type="text" placeholder="Search" className ="header__search-input"></input>
