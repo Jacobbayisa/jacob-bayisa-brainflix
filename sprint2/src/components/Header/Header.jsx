@@ -2,7 +2,8 @@ import React from 'react';
 import "./Header.scss";
 import logoImage from '../../assets/Logo/Logo-brainflix.svg'
 
-const Header = () => {
+const Header = (props) => {
+
 
     return (
         <section className="header">
@@ -11,7 +12,7 @@ const Header = () => {
             </div>
             <form className="header__form">
                 <input type="text" placeholder="Search" className ="header__search-input"></input>
-                <button className="header__button"> UPLOAD</button>
+                <button className="header__button" onClick={props.click}> UPLOAD</button>
                 <div className="header__image-icon"></div>
             </form>
             <nav className="header__nav">

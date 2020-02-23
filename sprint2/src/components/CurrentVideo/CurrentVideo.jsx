@@ -1,6 +1,6 @@
 import React from 'react';
 import Videos from '../Videos';
-import './MainVideo.scss'
+import './CurrentVideo.scss'
 import viewIcon from '../../assets/Icons/SVG/Icon-views.svg'
 import likeIcon from '../../assets/Icons/SVG/Icon-likes.svg'
 
