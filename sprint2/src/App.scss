@@ -12,12 +12,4 @@ html,body{
     font-size:0.8rem;
   }
   
-  .main-container{
-    display:flex;
-    flex-wrap:wrap;
-    @include desktop{
-      margin-left:5%;
-      margin-right:5%;
-    }
-   
-  }
+  
