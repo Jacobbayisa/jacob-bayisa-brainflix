@@ -1,8 +1,8 @@
 @import '../../styles/mixins';
 
 .current-video{
-    padding-left:16px;
-    padding-right:16px;
+    padding-left:5%;
+    padding-right:5%;
     display:flex;
     flex-wrap:wrap;
     @include tablet{
@@ -83,6 +83,7 @@
     &__description{
         font-size:11px;
         margin-top:24px;
+        width:90%;
         line-height:1.3rem;
         @include tablet{
             border-top:1px solid silver;
@@ -90,7 +91,7 @@
             padding-top:40px;
             font-size:0.9rem;
             line-height:1.5rem;
-            padding-right:30%;
+            padding-right:20%;
         }
         @include tablet{
             font-size:0.7rem;

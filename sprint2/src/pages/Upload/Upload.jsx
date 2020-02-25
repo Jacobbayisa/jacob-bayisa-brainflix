@@ -14,7 +14,7 @@ const App = () => {
                 <input type="text" name="title" className ="upload__video-title" 
                 placeholder="Add a title to your video"/>
                 <label htmlFor="title" className="upload__label upload__description-label">ADD A VIDEO DESCRIPTION</label>
-                <textarea type="text" name="title" class ="upload__description"
+                <textarea type="text" name="title" className ="upload__description"
                 placeholder="Add a description of your video"  rows="5"/>
             </form>
             <div className="upload__buttons">

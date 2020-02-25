@@ -2,8 +2,8 @@
 
 
 .comment-section{
-    padding-left:16px;
-    padding-right:16px;
+    padding-left:5%;
+    padding-right:5%;
     box-sizing: border-box;
     display:flex;
     flex-wrap:wrap;
@@ -11,7 +11,7 @@
     box-sizing:border-box;
     flex-basis:100%;
     @include tablet{
-        margin:16px 40px 16px 16px;
+        margin:16px 5% 16px 5%;
         padding:0;
         align-items: center;
         justify-content:flex-start;
@@ -47,7 +47,8 @@
        }
     }
     &__form{
-        width:68vw;
+        width:85%;
+        padding-left:16px;
         box-sizing:border-box;
         margin:0;
         display:flex;
@@ -57,7 +58,7 @@
         @include tablet{
             flex-direction: row;
             justify-content: space-between;
-            width:616px; 
+            width:87%; 
             margin-left:20px;
         }
         @include desktop{
@@ -86,7 +87,7 @@
         border:2px solid #0095FF;;
         width:100%;
         @include tablet{
-            width:430px;
+            width:70%;
             height:50px;
             margin:0;
             box-sizing:border-box;

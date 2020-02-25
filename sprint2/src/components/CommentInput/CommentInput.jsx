@@ -1,11 +1,10 @@
 import React from 'react';
 import './CommentInput.scss';
-import Comments from '../Comments'
 
-const CommentInputer= () =>{
+const CommentInputer= (props) =>{
     return(
         <section className ="comment-section">
-            <h1 className="comment-section__header">{Comments.length} comments </h1>
+            <h1 className="comment-section__header"> {props.length} comments </h1>
             <div className="comment-section__image"></div>
             <form className="comment-section__form" action="post">
                 <label htmlFor="comment">JOIN THE CONVERSATION </label>
