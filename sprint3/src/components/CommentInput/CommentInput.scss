@@ -1,0 +1,119 @@
+@import '../../styles/mixins';
+
+
+.comment-section{
+    padding-left:5%;
+    padding-right:5%;
+    box-sizing: border-box;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    box-sizing:border-box;
+    flex-basis:100%;
+    @include tablet{
+        margin:16px 5% 16px 5%;
+        padding:0;
+        align-items: center;
+        justify-content:flex-start;
+    }
+    @include desktop{
+        margin:16px 0 16px 0;
+        width:100%;
+    }
+    
+    &__header{
+        flex-basis:100%;
+        font-size:1rem;
+        margin-top:30px;
+        margin-bottom:32px;
+        @include tablet{
+            font-size:1rem;
+        }
+    }
+    &__image{
+        width:45px;
+        height:45px;
+        border:none;
+        border-radius:100%;
+        background-image:url("../../assets/Images/Mohan-muruge.jpg");
+        background-size:cover;
+        background-position:center;
+        background-position-x:0.1rem;
+        @include desktop{
+           width:40px;
+           height:40px;
+           margin-top:20px;
+           margin-right:5px;
+       }
+    }
+    &__form{
+        width:85%;
+        padding-left:16px;
+        box-sizing:border-box;
+        margin:0;
+        display:flex;
+        flex-direction:column;
+        flex-wrap:wrap;
+        @include m-h4-paragraph;
+        @include tablet{
+            flex-direction: row;
+            justify-content: space-between;
+            width:87%; 
+            margin-left:20px;
+        }
+        @include desktop{
+            width:87%;  
+        }
+        label{
+            margin:0;
+            font-weight:bold;
+            font-size:12px;
+            color:$silver;
+            @include tablet{
+                flex-basis:100%;
+                margin-bottom:5px;
+            }
+        }
+        .name{
+            border:2px solid $black;
+        }
+    
+    }
+    &__comment{
+        margin:10px 0 20px 0;
+        padding:0.8rem;
+        box-sizing: border-box;
+        border-radius:5px;
+        border:2px solid #0095FF;;
+        width:100%;
+        @include tablet{
+            width:70%;
+            height:50px;
+            margin:0;
+            box-sizing:border-box;
+        }
+        @include desktop{
+            width:70%;
+            font-size:12px;
+        }
+    }
+    &__submit{
+        padding:15px 10px;
+        border-radius:5px;
+        border:none;
+        width:100%;
+        margin-bottom:16px;
+        background-color:#0095FF;
+        color:$white;
+        align-self: center;
+        @include tablet{
+            width:160px;
+            padding:18px 10px;
+            margin:0;
+            
+        }
+        @include desktop{
+            width:25%;
+        }
+    }
+}

@@ -1,0 +1,100 @@
+@import '../../styles/mixins';
+
+.current-video{
+    padding-left:5%;
+    padding-right:5%;
+    display:flex;
+    flex-wrap:wrap;
+    @include tablet{
+        justify-content:space-between;
+    }
+    @include desktop{
+       padding:0;
+       margin:0;
+    }
+    &__title{
+        font-family:avenir-bold;
+        width:100%;
+        @include tablet{
+            font-size:2rem;
+        }
+    }
+    &__artist-time-cont{
+        display:flex;
+        flex-wrap:wrap;
+        flex-basis:100%;
+        @include tablet{
+            flex-basis:45%;
+            margin-bottom:24px;
+        }
+    }
+    &__artist{
+        margin-right:8px;
+        font-weight:bold;
+        @include tablet{
+            margin-top:0;
+            margin-bottom:0;
+            align-self: center;
+        }
+       @include tablet{
+            font-size:0.8rem;
+        }
+    }
+    &__date-stamp{
+        color:silver;
+        @include tablet{
+            margin:0;
+            align-self: center;
+        }
+
+    }
+    &__view-section{
+        display:flex;
+        flex-wrap:wrap;
+        flex-basis:100%;
+        align-items: center;
+        margin-bottom:24px;
+        @include tablet{
+            flex-basis:45%;
+            justify-content: flex-end;
+            padding-right:20px;
+        }
+    }
+    &__views-count{
+        margin-left:8px;
+        margin-right:20%;
+        font-weight:lighter;
+        font-size:0.8rem;
+        @include tablet{
+            margin:0 24px 0 0;    
+        }
+    }
+    &__likes-icon{
+        margin-right:8px;
+    }
+    &__likes-count{
+        font-weight:lighter;
+        font-size:0.8rem;
+        @include tablet{
+            margin:0;    
+        }
+        
+    }
+    &__description{
+        font-size:11px;
+        margin-top:24px;
+        width:90%;
+        line-height:1.3rem;
+        @include tablet{
+            border-top:1px solid silver;
+            margin:0;
+            padding-top:40px;
+            font-size:0.9rem;
+            line-height:1.5rem;
+            padding-right:20%;
+        }
+        @include tablet{
+            font-size:0.7rem;
+        }
+    }
+}

@@ -1,0 +1,125 @@
+@import '../../styles/mixins';
+
+.header{
+    box-sizing: border-box;
+    padding-top:16px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin:0 5% 5%;
+    height:169px;
+    @include tablet{
+        height:80px;
+        flex-direction:row;
+        justify-content:space-between;
+    }
+    @include desktop{
+        margin:0 10% 16px 10%;
+        padding:0 0;
+    }
+    &__logo{
+        display:flex;
+        width:50%;
+        height:20px;
+        flex-wrap:wrap;
+        margin-left:auto;
+        margin-right:auto;
+        align-items:center;
+        align-self: center;
+        justify-content: center;
+        margin:0 0 16px 0;
+        @include tablet{
+            width:20%;
+            margin-bottom:0;
+        }
+        @include desktop{
+            justify-content:flex-start;
+            width:10%;
+        }
+    }
+   
+    &__form{
+        display:flex;
+        flex-wrap:wrap;
+        align-items:center;
+        width:100%;
+        justify-content:space-between ;
+        @include tablet{
+            width:70%;
+            justify-content:space-between;
+        }
+        @include desktop{
+            width:85%;
+        }
+    }
+    &__search-input{
+        box-sizing: border-box;
+        width:100%;
+        background-image:url("../../assets/Icons/SVG/Icon-search.svg");
+        background-position-y: center;
+        background-position-x: 15px;
+        background-repeat: no-repeat;
+        background-size:1.2rem;
+        text-indent: 30px;
+        padding:15px;
+        border:1px solid#E1E1E3;
+        border-radius:5px;
+        align-self:center;
+        @include tablet{
+            width:40%;
+            margin-left:20%;
+        } 
+        @include desktop{
+            width:30%;
+            margin-left:40%;
+        }
+    }
+    &__upload-link{
+        width:73%;
+        padding:15px;
+        font-weight:bolder;
+        text-decoration:none;
+        color:#fff;
+        background-color:#0095FF;
+        background-image:url("../../assets/Icons/SVG/Icon-upload.svg");
+        background-position-y: center;
+        background-position-x: 25%;
+        background-repeat: no-repeat;
+        background-size:1.3rem;
+        margin-top:8px;
+        margin-bottom:16px;
+        border:none;
+        border-radius:5px;
+        align-self: center;
+        text-align:center;
+        @include tablet{
+            width:20%;
+            margin:0;
+            background-position-x:0.8vw;
+        }
+        @include desktop{
+            width:15%;
+            margin:0  24px;
+            background-position-x:2vw;
+            background-position-x: 20%;
+            text-indent:30%;
+        }
+    }
+    &__image-icon{
+        width:45px;
+        height:45px;
+        border:none;
+        border-radius:100%;
+        background-image:url("../../assets/Images/Mohan-muruge.jpg");
+        background-size:cover;
+        background-position:center;
+        background-position-x:0.1rem;
+        @include tablet{
+            margin:0;
+        }
+        @include desktop{
+            width:40px;
+            height:40px;
+        }
+    }
+}

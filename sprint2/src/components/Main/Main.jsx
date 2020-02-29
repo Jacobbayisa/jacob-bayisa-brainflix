@@ -16,7 +16,7 @@ class Main extends Component {
   state = {
       videos:[],
       mainVideo: {},
-      prevProps:null
+      prevPropsId:null
   }
   
   componentDidMount(){
@@ -30,12 +30,12 @@ class Main extends Component {
       })
   }
   componentDidUpdate(){
-    if(this.props.match.params.id != this.state.prevProps){
+    if(this.props.match.params.id != this.state.prevPropsId){
     axios.get(`https://project-2-api.herokuapp.com/videos/${this.props.match.params.id}?api_key=${API_KEY}`)
       .then(result=>{
         this.setState({
           mainVideo: result.data,
-          prevProps:result.data.id})
+          prevPropsId:result.data.id})
         })
       }
   }
@@ -88,7 +88,9 @@ class Main extends Component {
                   <button className="next-video"  >NEXT VIDEO</button>
                   {
                     this.state.videos.map((video,index)=>{
-                      if(video.id==this.state.prevProps){
+                      if((!this.state.prevPropsId)&& index===0){
+                        return null
+                      } else if(video.id==this.state.prevPropsId){
                           return null;
                       } else  {
                       return (

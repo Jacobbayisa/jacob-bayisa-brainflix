@@ -1,0 +1,15 @@
+@import './styles/mixins';
+@import './styles/variables';
+@import './styles/fonts';
+
+html,body{
+    font-family:avenir;
+}
+
+.next-video{
+    margin:40px 16px 16px;
+    color:silver;
+    font-size:0.8rem;
+  }
+  
+  
