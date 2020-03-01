@@ -1,7 +1,7 @@
 import React ,{Component} from 'react';
 import './App.scss';
 import Header from './components/Header';
-import Main from './components/Main';
+import Main from './pages/Main';
 import Upload from './pages/Upload';
 import {
   BrowserRouter as Router,

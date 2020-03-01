@@ -1,9 +1,9 @@
 const express = require('express');
 const cors = require('cors');
 const App = express();
-const videos = require('../data/videos.json');
-const mainVideo = require('../data/mainVideo.json');
-const defaultMainVideos = require('../data/defaultMainVideos.json');
+const videos = require('./data/videos.json');
+const mainVideo = require('./data/mainVideo.json');
+const defaultMainVideos = require('./data/defaultMainVideos.json');
 const uuid = require('uuid/v1');
 
 App.use(cors());

@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
-import CommentDisplay from '../CommentDisplay';
-import CommentInput from '../CommentInput';
-import CurrentVideo from '../CurrentVideo';
-import SideVideo from '../SideVideo';
-import Hero from '../Hero';
+import CommentDisplay from '../../components/CommentDisplay';
+import CommentInput from '../../components/CommentInput';
+import CurrentVideo from '../../components/CurrentVideo';
+import SideVideo from '../../components/SideVideo';
+import Hero from '../../components/Hero';
 import './Main.scss';
 import axios from 'axios';
  

@@ -29,18 +29,20 @@ const Upload = () => {
                 <div className="upload__img"> </div>
             </div>
             <form method ="post" onSubmit ={uploadHandler} className="upload__form">
-                <label htmlFor="title" className="upload__label upload__title-label">TITLE YOUR VIDEO</label>
-                <input type="text" name="title" className ="upload__video-title" 
-                placeholder="Add a title to your video"/>
-                <label htmlFor="description" className="upload__label upload__description-label">ADD A VIDEO DESCRIPTION</label>
-                <textarea type="text" name="description" className ="upload__description"
-                placeholder="Add a description of your video"  rows="5"/>
-                <button type ="submit" className="upload__publish">PUBLISH</button>
+                <div className= "upload__inputs" >
+                    <label htmlFor="title" className="upload__label upload__title-label">TITLE YOUR VIDEO</label>
+                    <input type="text" name="title" className ="upload__video-title" 
+                    placeholder="Add a title to your video"/>
+                    <label htmlFor="description" className="upload__label upload__description-label">ADD A VIDEO DESCRIPTION</label>
+                    <textarea type="text" name="description" className ="upload__description"
+                    placeholder="Add a description of your video"  rows="5"/>
+                </div>
+                <div className="upload__buttons">
+                    <button className="upload__cancel"> CANCEL</button>
+                    <button type ="submit" className="upload__publish">PUBLISH</button>
+                </div>
             </form>
-            <div className="upload__buttons">
-                <button className="upload__cancel"> CANCEL</button>
-                
-            </div>
+            
         </div>
     )
 
