@@ -33,8 +33,7 @@ App.post("/comments/:id",(req,res)=>{
         return video.id ===id
     }
         );
-    // comments[req.params.id] = req.body;
-    // return res.status(201).send(comments);
+    return res.status(201).send(mainVideo.find(video=> video.id ===id));
 });
 App.post("/videos",(req,res)=>{
     const id = uuid();

@@ -67,7 +67,7 @@ class Main extends Component {
           }
       
           {
-            Object.keys(this.state.mainVideo).length>0 &&<CommentInput id ={this.state.prevPropsId}
+            Object.keys(this.state.mainVideo).length>0 &&<CommentInput  id ={this.state.prevPropsId}
               length={(this.state.mainVideo.comments).length}/>
           }
           {

@@ -3,21 +3,13 @@ import './CommentInput.scss';
 import Axios from 'axios';
 
 class CommentInputer extends Component {
-    state ={
-        name:"Jacob Bayisa",
-        comment:""
-    }
 
      commentSubmitHandler = (event) =>{
         event.preventDefault();
         const newComment = event.target.comment.value;
-        this.setState({
-            comment:newComment
-        })
-        
         Axios.post(`http://localhost:8085/comments/${this.props.id}`,
         {
-           name:this.state.name, comment:this.state.comment
+           name:"Jacob Bayisa", comment:newComment
         })
         .then(res => {
             console.log(res);
