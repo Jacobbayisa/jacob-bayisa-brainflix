@@ -25,10 +25,17 @@ App.get("/comments/:id",(req,res)=>{
    // res.send(mainVideo[req.params.id]);
    res.send(test)
 });
+
 App.post("/comments/:id",(req,res)=>{
-    comments[req.params.id] = req.body;
-    return res.status(201).send(comments);
-})
+    const id = req.params.id;
+    mainVideo.find(video => {
+        video.comments.push(req.body);
+        return video.id ===id
+    }
+        );
+    // comments[req.params.id] = req.body;
+    // return res.status(201).send(comments);
+});
 App.post("/videos",(req,res)=>{
     const id = uuid();
     const newData = req.body.video;
