@@ -8,6 +8,7 @@ import './Main.scss';
 import axios from 'axios';
  
 class Main extends Component {
+ //initialize the state
   state = {
       videos:[],
       mainVideo: {},
